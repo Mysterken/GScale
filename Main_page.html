@@ -104,7 +104,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      height: 9vh;
+      height: 10vh;
       padding: 0 7vw;
     }
     .Thumbnails {
@@ -122,6 +122,7 @@
     }
     .Thumbnails > div > img {
       width: 25vw;
+      height: 25vh;
       -webkit-transition: 0.3s ease-in-out;
       transition: 0.3s ease-in-out;
     }
@@ -133,9 +134,9 @@
     }
     .thumbnail { margin: 20px; }
     .thumbnail span { 
-      margin: 20px;
+      margin-top: 1vh;
       color: white;
-      font-size: 2vw;
+      font-size: 4vh;
     }
     .t3, .t4{
       padding-top: 5vh;
@@ -161,6 +162,11 @@
         <span id="line"></span>
         <span id="Jeux">Jeux</span>
       </div>
+      <div class="Jeux-Decorator">
+        <span id="line-h"></span>
+        <span id="line-v"></span>
+        <img src="img/controller.svg" id="controller-svg">
+      </div>
       <div class="Thumbnails">
         <div class="thumbnail t1">
           <img src="img/Blue_Rectangle.png">
@@ -178,11 +184,6 @@
           <img src="img/Blue_Rectangle.png">
           <span>Tally Counter</span>
         </div>
-      </div>
-      <div class="Jeux-Decorator">
-        <span id="line-h"></span>
-        <span id="line-v"></span>
-        <img src="img/controller.svg" id="controller-svg">
       </div>
     </div>
   </body>
