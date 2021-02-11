@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Puissance 4</title>
+        <style>
+            body {
+                /*background-color: rgb(23,25,26);background-color: rgb(23,25,26);*/
+            }
+            .container {
+                margin: auto;
+                width: 80vmin;
+                height: 68vmin;
+                /*border: 1px solid hotpink;*/
+            }
+            .board {
+                height: 100%;
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                grid-template-rows: repeat(6, 1fr); 
+                gap: 0px 0px;
+                /*grid-template-areas:
+                    ". . . . . . ."
+                    ". . . . . . ."
+                    ". . . . . . ."
+                    ". . . . . . ."
+                    ". . . . . . ."
+                    ". . . . . . .";*/
+                /*border: 1px solid green;*/
+                }
+            .board div {
+                background-image: url(img/board.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                /*border: 1px solid blue;*/
+            }
+            /*
+            #c21 {
+                background-color: crimson;
+            }
+            #c12 {
+                background-color: crimson;
+            }*/
+        </style>
+        <script type="text/javascript" src="script/connect4.js"></script> 
+    </head>
+    <body>
+        <div class="container">
+            <div class="board">
+                <div id="c35" onclick="play(0)"></div>
+                <div id="c36" onclick="play(1)"></div>
+                <div id="c37" onclick="play(2)"></div>
+                <div id="c38" onclick="play(3)"></div>
+                <div id="c39" onclick="play(4)"></div>
+                <div id="c40" onclick="play(5)"></div>
+                <div id="c41" onclick="play(6)"></div>
+                <div id="c28" onclick="play(0)"></div>
+                <div id="c29" onclick="play(1)"></div>
+                <div id="c30" onclick="play(2)"></div>
+                <div id="c31" onclick="play(3)"></div>
+                <div id="c32" onclick="play(4)"></div>
+                <div id="c33" onclick="play(5)"></div>
+                <div id="c34" onclick="play(6)"></div>
+                <div id="c21" onclick="play(0)"></div>
+                <div id="c22" onclick="play(1)"></div>
+                <div id="c23" onclick="play(2)"></div>
+                <div id="c24" onclick="play(3)"></div>
+                <div id="c25" onclick="play(4)"></div>
+                <div id="c26" onclick="play(5)"></div>
+                <div id="c27" onclick="play(6)"></div>
+                <div id="c14" onclick="play(0)"></div>
+                <div id="c15" onclick="play(1)"></div>
+                <div id="c16" onclick="play(2)"></div>
+                <div id="c17" onclick="play(3)"></div>
+                <div id="c18" onclick="play(4)"></div>
+                <div id="c19" onclick="play(5)"></div>
+                <div id="c20" onclick="play(6)"></div>
+                <div id="c7" onclick="play(0)"></div>
+                <div id="c8" onclick="play(1)"></div>
+                <div id="c9" onclick="play(2)"></div>
+                <div id="c10" onclick="play(3)"></div>
+                <div id="c11" onclick="play(4)"></div>
+                <div id="c12" onclick="play(5)"></div>
+                <div id="c13" onclick="play(6)"></div>
+                <div id="c0" onclick="play(0)"></div>
+                <div id="c1" onclick="play(1)"></div>
+                <div id="c2" onclick="play(2)"></div>
+                <div id="c3" onclick="play(3)"></div>
+                <div id="c4" onclick="play(4)"></div>
+                <div id="c5" onclick="play(5)"></div>
+                <div id="c6" onclick="play(6)"></div>
+            </div>
+            <div class="button">
+                <h1 onclick="reset()">RESET</h1>
+            </div>
+        </div>
+    </body>
+</html>
