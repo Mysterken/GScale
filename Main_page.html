@@ -2,12 +2,13 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title></title>
+    <title>G-Scale</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <style>
     html {
       scroll-behavior: smooth;
+      scrollbar-color: #53595C #1D1F20;
     }
     body {
       font-family: 'Roboto', sans-serif;
@@ -25,7 +26,7 @@
       position: absolute;
       height: 100vh;
       width: 100vw;
-      background:linear-gradient(rgba(0,0,0,0.8), rgba(255,255,255,0.1));
+      background: linear-gradient(rgba(0,0,0,0.8), rgba(255,255,255,0.1));
     }
     #logo {
       display: block;
@@ -104,7 +105,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      height: 10vh;
+      height: 10vmin;
       padding: 0 7vw;
     }
     .Thumbnails {
@@ -120,9 +121,9 @@
       align-items: center;
       flex-direction: column;
     }
-    .Thumbnails > div > img {
-      width: 25vw;
-      height: 25vh;
+    .Thumbnails > div > img, .Thumbnails > div > a >  img {
+      width: 25vmin;
+      
       -webkit-transition: 0.3s ease-in-out;
       transition: 0.3s ease-in-out;
     }
@@ -136,7 +137,7 @@
     .thumbnail span { 
       margin-top: 1vh;
       color: white;
-      font-size: 4vh;
+      font-size: 5vmin;
     }
     .t3, .t4{
       padding-top: 5vh;
@@ -169,7 +170,7 @@
       </div>
       <div class="Thumbnails">
         <div class="thumbnail t1">
-          <img src="img/Blue_Rectangle.png">
+          <a href="Puissance4.html"><img src="img/p4_screen.png"></a>  
           <span>Puissance 4</span>
         </div>
         <div class="thumbnail t2">
