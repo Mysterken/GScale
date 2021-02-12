@@ -113,9 +113,9 @@ html {
     align-items: center;
     flex-direction: column;
   }
-  .Thumbnails > div > img, .Thumbnails > div > a >  img {
+  .Thumbnails > div > a >  img {
     width: 25vmin;
-    
+    height: auto;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
