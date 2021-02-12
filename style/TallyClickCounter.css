@@ -1,0 +1,62 @@
+body {
+    background-image: url('../img/poulpe.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+
+h1 {
+    font-size: 100px;
+    border: 5px solid;
+    padding: 10px;
+    border-image: url('../img/border.png') 10 round;
+    text-align: center;
+}
+
+img {
+    width: 15%;
+    object-fit: cover;
+}
+
+figure {
+    text-align: center;
+    margin: 50px 30px;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+button {
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+@keyframes go {
+    0%   {left:0px; top:0px;}
+    100%  {left:50px; top:0px;}
+  }
+
+.go {
+    position: relative;
+    animation-name: go;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+button {
+    padding: 20px;
+    background: rgb(224, 95, 21);
+    font-family: "Lato", sans-serif;
+    font-size: 16pt;
+    border: 1px solid lightpink;
+    color: lightpink;
+}

@@ -1,0 +1,118 @@
+body {
+    height: 100vh;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    image-rendering: smooth;
+}
+#button-mainpage {
+    position: relative;
+    top: -800px;
+    right: 150px;
+    border: 1px solid white;
+    color: pink;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    background-color:black;
+    height: 60px;
+    width: 150px;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color:pink
+
+}
+#button-shuffle {
+    position: relative;
+    left: 1750px;
+    right: 20px;
+    top: -25px;
+    border: 1px solid black;
+    color: pink;
+    font-family: cursive;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    background-color:red;
+    height: 150px;
+    width: 120px;
+}
+
+
+
+#button-shuffle:hover {
+    border: 5px solid yellow;
+    box-shadow: none;
+}
+
+#button-mainpage:hover {
+    border: 5px solid yellow;
+    box-shadow: none;
+}
+
+
+
+.carte {
+    height: 250px;
+    width: 170px;
+    background-color: grey;
+    display: inline-block;
+    cursor: grab;
+}
+
+
+.row {
+    text-align: center;
+}
+
+.carte:hover {
+    border: 5px solid yellow;
+    box-sizing: border-box;
+}
+
+.head {
+    content: url(../img/head.jpg);
+}
+
+.left-arm {
+    content: url(../img/left-arm.jpg);
+}
+
+.right-arm {
+    content: url(../img/right-arm.jpg);
+}
+
+.left-leg {
+    content: url(../img/left-leg.jpg);
+}
+
+.right-leg {
+    content: url(../img/right-leg.jpg);
+}
+
+.full-body {
+    content: url(../img/full-body.jpg);
+}
+
+
+.dragonred {
+    content: url(../img/dragonred.jpg);
+}
+
+.dragonblue {
+    content: url(../img/dragonblue.jpg);
+}
+
+.dragongreen {
+    content: url(../img/dragongreen.jpg);
+}
+
+.face-arriere {
+    content: url(../img/back-card.jpg);
+}

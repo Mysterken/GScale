@@ -1,0 +1,58 @@
+body {
+    background-image: url('../img/kakao.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+
+.Niveau {
+    height: 0;
+    width: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 25px solid green;
+    font: small;
+}
+
+
+@keyframes go {
+    0%   {left:0px; top:0px;}
+    100%  {left:50px; top:0px;}
+  }
+
+.font {
+    font-size: 30px;
+    position: relative;
+    animation-name: go;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+.button {
+    padding: 20px;
+    background: transparent;
+    text-shadow: 1px 1px 1px lightyellow;
+    font-family: "Lato", sans-serif;
+    font-size: 18pt;
+    border: 1px solid lightyellow;
+    color: lightyellow;
+}
+
+.but {
+    padding: 0;
+    border: 3px rgb(88, 88, 226) solid;
+    border-radius: 20px / 10px;
+    box-shadow: 0 lightblue;
+    height: 50px;
+    width: 50px;
+    background: lightblue;
+    border-radius: 50%;
+}
+
+table {
+    border: 3px rgb(233, 209, 71) solid;
+    border-radius: 20px / 10px;
+}
