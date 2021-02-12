@@ -130,7 +130,7 @@ function reset() {
     }
     document.getElementById("turn").style.fontSize = "10vmin";
     document.getElementById("turn").style.margin = "0 2%";
-    document.getElementById("turn").innerHTML = "Red's Turn";
+    document.getElementById("turn").innerHTML = "Tour de Rouge";
     document.getElementById("circle").style.display = 'initial';
     document.getElementById("circle").style.backgroundColor = 'red';
 }
