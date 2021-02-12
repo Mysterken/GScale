@@ -17,7 +17,7 @@ function createGrid() {
 
 // Return "Y" or "R" based on turn number
 function playerTurn(turn) {
-    return (turn % 2 === 0) ? "yellow" : "red";
+    return (turn % 2 === 0) ? "Jaune" : "Rouge";
 }
 
 function horizontalWin(grid, col) {
@@ -85,7 +85,7 @@ function play(cell_pos) {
 
     if (!GameOn) return;
 
-    let diskColor = playerTurn(turn);
+    let diskColor = (playerTurn(turn)==="Jaune")?"yellow":"red";
 
     let pcd = placeDisk(GameGrid, cell_pos);
     if (!pcd) return;
@@ -96,16 +96,23 @@ function play(cell_pos) {
 
     GameGrid[pcd[0]][pcd[1]] = diskColor;
     turn += 1;
+    document.getElementById("turn").innerHTML = "Tour de "+playerTurn(turn);
+    document.getElementById("circle").style.backgroundColor = (playerTurn(turn)==="Jaune")?"yellow":"red";
 
     if (horizontalWin(GameGrid, pcd[1]) ||
         verticalWin(GameGrid, pcd[0]) ||
         diagonalsWin(GameGrid, pcd[0], pcd[1], true) ||
         diagonalsWin(GameGrid, pcd[0], pcd[1], false)
         ) {
-            console.log(diskColor+" Won in "+(turn-1)+" turn!");
+            document.getElementById("turn").style.fontSize = "6vmin";
+            document.getElementById("turn").style.margin = "2% 5%";
+            document.getElementById("turn").innerHTML = playerTurn(turn-1)+" gagne en "+(turn-1)+" tours!";
+            document.getElementById("circle").style.display = "none";
             GameOn = false;
     } else if (turn == 43) {
-        console.log("The game finished in a tie.");
+        document.getElementById("turn").style.fontSize = "10vmin";
+        document.getElementById("turn").innerHTML = "C'est une égalité.";
+        document.getElementById("circle").style.display = "none";
         GameOn = false;
     }
 }
@@ -119,6 +126,11 @@ function reset() {
 
     for (i=0; i<42; i++) {
         let cell = document.getElementById("c"+i);
-        cell.style.backgroundColor = "transparent";
+        cell.style.backgroundColor = "rgb(218, 218, 218)";
     }
+    document.getElementById("turn").style.fontSize = "10vmin";
+    document.getElementById("turn").style.margin = "0 2%";
+    document.getElementById("turn").innerHTML = "Red's Turn";
+    document.getElementById("circle").style.display = 'initial';
+    document.getElementById("circle").style.backgroundColor = 'red';
 }
